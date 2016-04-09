@@ -1,0 +1,51 @@
+print"Elija un numero 1 o 2"
+var1 = int(raw_input("INGRESE \n 1.SI quieres calculadora.\n 2.SI quieres saber si un numero es par o impar \n"))
+
+
+if var1 == 1:
+    print  "Elegiste Calculadora \n 1. Para sumar \n 2. Para restar \n 3. Para multiplicar \n 4. Para dividir \n 5.Para hallar el residuo" 
+    var2=int (raw_input ("ingrese el numero: "))
+ 
+    if var2== 1:
+        var3= int(raw_input("Ingrese un numero: "))
+        var4= int(raw_input("Ingrese un numero: "))
+        print var3+var4
+    if var2 ==2:
+        var5= int(raw_input("Ingrese un numero: "))
+        var6= int(raw_input("Ingrese un numero: "))
+        print var5-var6
+    if var2 ==3:
+        var7= int(raw_input("Ingrese un numero: "))
+        var8= int(raw_input("Ingrese un numero: "))
+        print var7*var8
+    if var2 ==4:
+        var9= int(raw_input("Ingrese un numero: "))
+        if var9 ==0:
+            print "No es valido"
+        else:
+            var10= int(raw_input("Ingrese un numero: "))
+            if var10 ==0:
+                print "No es valido"
+            else:
+                print var9/var10
+    if var2 ==5:
+        var11= int(raw_input("Ingrese un numero: "))
+        if var11==0:
+            print "No es valido"
+        else:
+            var12= int(raw_input("Ingrese un numero: "))
+            if var12==0:
+                print "No es valido"
+            else:
+                print var11%var12
+
+if var1 ==2:
+    print "elegiste para saber si el numero es par  o impar"
+    var13 = int(raw_input("ingrese un numero: "))
+    if var13%2==0:
+        print "Es par"
+    if var13%2!=0:
+        print "Es impar"
+
+
+                         
